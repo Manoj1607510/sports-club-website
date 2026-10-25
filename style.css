@@ -1,0 +1,101 @@
+body{
+      margin:0;
+      padding:0;
+      background-color:white;
+      
+      align-items:center;
+      background-image:url("C:/Users/GOWTHAM SAI/Downloads/pexels-johannes-plenio-1103970.jpg");
+   
+}
+.slider{
+        width:900;
+        height:400px;
+       
+        overflow:hidden;
+        padding:10px 10px 15px 50px;
+       
+        
+}
+/css for manual slide navigation/
+
+
+
+
+
+
+#nav-fixed{
+         
+         width:100%;
+         border-bottom:1px solid #f1f1f1;
+         padding:0;
+         background-color:white;
+         color:black;
+         font-weight:bold;
+         text-transform:uppercase;
+         border-style:ridge;
+}
+
+ul{
+    list-style-type:none;
+    margin:15px;
+    padding:0;
+}
+
+li{
+     display:inline;
+     margin:15px 10px;
+     padding-bottom:5px;
+     transition:color 0.4s;
+     underline:nounderline;
+     color:black;
+}
+
+li:hover{
+       
+       color:white;
+       cursor:pointer;
+}
+
+.active{
+         color:white;
+         border-bottom:3px solid blue;
+}
+.image-container {
+            display: flex; /* Use flexbox for image container */
+            
+            
+}
+.rounded-image {
+            width: 650px; /* Set width for the images */
+            height: 450px; /* Set height for the images */
+            border-radius: 40px; /* Set rounded corners */
+            object-fit: cover; /* Ensure images cover the area without distortion */
+            margin: 0 40px; /* Space between the images */
+            border: 2px solid #333; /* Optional: add border for visibility */
+            
+}
+body {
+    position: relative;
+    background-image: url('C:/Users/CHIRIKI MANOJ KUMAR/OneDrive/Desktop/HTML PROJECT/HTML PHOTOS/backgroundall1.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed;
+}
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0); 
+    pointer-events: none; 
+    z-index: -1; 
+}
+a {
+            text-decoration: none; /* Remove the underline from links */
+            color: #007BFF; /* Set link color (optional) */
+        }
+
+
